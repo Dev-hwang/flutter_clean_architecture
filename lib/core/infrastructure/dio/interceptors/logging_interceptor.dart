@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../../../utils/logger.dart';
+import '../../../../logger/logger.dart';
 
 class LoggingInterceptor extends Interceptor {
   @override

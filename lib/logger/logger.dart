@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 
-import '../models/ansi_color.dart';
+import 'log_level.dart';
+
+export 'log_level.dart';
 
 abstract class Logger {
   static void debug(String message) => log(LogLevel.debug, message);
@@ -20,35 +22,5 @@ abstract class Logger {
       final String fullMessage = '$emoji $ansiMessage';
       print(fullMessage);
     }
-  }
-}
-
-enum LogLevel {
-  debug,
-  info,
-  warning,
-  error,
-  fatal,
-}
-
-extension LogLevelExtension on LogLevel {
-  AnsiColor get ansiColor {
-    return switch (this) {
-      LogLevel.debug => const AnsiColor.none(),
-      LogLevel.info => const AnsiColor.code(12),
-      LogLevel.warning => const AnsiColor.code(208),
-      LogLevel.error => const AnsiColor.code(196),
-      LogLevel.fatal => const AnsiColor.code(199),
-    };
-  }
-
-  String get emoji {
-    return switch (this) {
-      LogLevel.debug => '🐛',
-      LogLevel.info => '💡',
-      LogLevel.warning => '⚠️',
-      LogLevel.error => '⛔',
-      LogLevel.fatal => '💥',
-    };
   }
 }

@@ -3,10 +3,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../models/result.dart';
-import '../utils/logger.dart';
-import 'api_exception.dart';
-import 'custom_exception.dart';
+import '../../../logger/logger.dart';
+import '../../domain/models/result.dart';
+import '../../domain/exceptions/api_exception.dart';
+import '../../domain/exceptions/custom_exception.dart';
 
 part 'exception_handler.g.dart';
 
