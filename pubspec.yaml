@@ -69,9 +69,9 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/i18n/
     - assets/icons/
     - assets/images/
-    - assets/languages/
 
   fonts:
     - family: NotoSansKR

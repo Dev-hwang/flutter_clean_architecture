@@ -19,7 +19,7 @@ class AppLocalization {
 
   Future<bool> load() async {
     final String data = await rootBundle
-        .loadString('assets/languages/${locale.languageCode}.json');
+        .loadString('assets/i18n/${locale.languageCode}.json');
     _sentences = json.decode(data);
     return true;
   }

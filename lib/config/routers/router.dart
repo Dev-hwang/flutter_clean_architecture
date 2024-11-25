@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 
+import '../../features/auth/presentation/ui/login_page.dart';
 import '../../features/home/presentation/ui/home_page.dart';
-import '../../features/login/presentation/ui/login_page.dart';
 import 'router_observer.dart';
 
 export 'package:go_router/go_router.dart';

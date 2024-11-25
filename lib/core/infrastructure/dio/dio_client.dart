@@ -49,7 +49,7 @@ abstract class DioClient {
   });
 }
 
-class DioClientImpl extends DioClient {
+class DioClientImpl implements DioClient {
   DioClientImpl({
     Duration? connectTimeout = const Duration(seconds: 10),
     Duration? receiveTimeout = const Duration(seconds: 10),
