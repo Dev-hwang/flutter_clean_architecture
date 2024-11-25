@@ -8,7 +8,7 @@ export 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
   static final GoRouter config = GoRouter(
-    initialLocation: Routes.home,
+    initialLocation: Routes.login,
     observers: [RouterObserver()],
     routes: [
       GoRoute(path: Routes.login, builder: (_, __) => const LoginPage()),

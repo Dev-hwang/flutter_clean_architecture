@@ -1,3 +1,6 @@
 {
-  "hello": "안녕하세요"
+  "login_naver": "네이버로 시작하기",
+  "login_kakao": "카카오로 시작하기",
+  "login_google": "Google로 시작하기",
+  "login_apple": "Apple로 시작하기"
 }

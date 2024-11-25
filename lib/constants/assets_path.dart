@@ -5,6 +5,10 @@ abstract class AssetsPath {
 
 final class IconsAssetsPath {
   final String github = 'assets/icons/github.png';
+  final String kakaoLogo = 'assets/icons/kakao_logo.png';
+  final String naverLogo = 'assets/icons/naver_logo.png';
+  final String googleLogo = 'assets/icons/google_logo.png';
+  final String appleLogo = 'assets/icons/apple_logo.png';
 }
 
 final class ImagesAssetsPath {
