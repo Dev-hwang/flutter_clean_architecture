@@ -1,27 +1,26 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'secure_storage.dart';
+part of 'login_controller.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$secureStorageHash() => r'52d17cba707904f800e9c3e131966247ad71fe49';
+String _$loginControllerHash() => r'8f102a65c66ec6c9913014964ae9ef1744540f11';
 
-/// See also [secureStorage].
-@ProviderFor(secureStorage)
-final secureStorageProvider = Provider<SecureStorage>.internal(
-  secureStorage,
-  name: r'secureStorageProvider',
+/// See also [LoginController].
+@ProviderFor(LoginController)
+final loginControllerProvider =
+    AutoDisposeNotifierProvider<LoginController, LoginState?>.internal(
+  LoginController.new,
+  name: r'loginControllerProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$secureStorageHash,
+      : _$loginControllerHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef SecureStorageRef = ProviderRef<SecureStorage>;
+typedef _$LoginController = AutoDisposeNotifier<LoginState?>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

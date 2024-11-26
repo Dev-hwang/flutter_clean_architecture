@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_architecture/constants/assets_path.dart';
 import 'package:flutter_clean_architecture/core/extensions/string_extension.dart';
-
-import '../../../../../constants/assets_path.dart';
-import 'login_button.dart';
+import 'package:flutter_clean_architecture/features/auth/presentation/ui/components/login_button.dart';
 
 class KakaoLoginButton extends StatelessWidget {
   const KakaoLoginButton({

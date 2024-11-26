@@ -4,7 +4,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'secure_storage.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 SecureStorage secureStorage(Ref ref) {
   return SecureStorageImpl();
 }
