@@ -5,5 +5,10 @@
   "login_google": "Google로 시작하기",
   "login_apple": "Apple로 시작하기",
   "confirm": "확인",
-  "cancel": "취소"
+  "cancel": "취소",
+  "navigation_item_label_home": "홈",
+  "navigation_item_label_community": "커뮤니티",
+  "navigation_item_label_map": "지도",
+  "navigation_item_label_chatting": "채팅",
+  "navigation_item_label_my": "마이"
 }
