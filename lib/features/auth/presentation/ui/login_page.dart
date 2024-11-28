@@ -3,8 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/config/routers/router.dart';
 import 'package:flutter_clean_architecture/core/extensions/string_extension.dart';
-import 'package:flutter_clean_architecture/core/ui/modal/common_dialog.dart';
-import 'package:flutter_clean_architecture/core/ui/modal/loading_overlay_mixin.dart';
+import 'package:flutter_clean_architecture/core/ui/modal/modal_state_mixin.dart';
 import 'package:flutter_clean_architecture/features/auth/domain/models/social_type.dart';
 import 'package:flutter_clean_architecture/features/auth/presentation/controllers/login_controller.dart';
 import 'package:flutter_clean_architecture/features/auth/presentation/controllers/state/login_state.dart';
@@ -21,8 +20,7 @@ class LoginPage extends ConsumerStatefulWidget {
   ConsumerState<ConsumerStatefulWidget> createState() => _LoginPageState();
 }
 
-class _LoginPageState extends ConsumerState<LoginPage>
-    with LoadingOverlayMixin {
+class _LoginPageState extends ConsumerState<LoginPage> with ModalStateMixin {
   void _onLoginButtonPressed(SocialType socialType) {
     ref.read(loginControllerProvider.notifier).socialLogin(socialType);
   }
@@ -41,9 +39,9 @@ class _LoginPageState extends ConsumerState<LoginPage>
           context.go(Routes.home);
         case LoginFailure():
           hideLoadingOverlay();
-          showCommonDialog(
-            context: context,
-            content: currState.exception.toString(),
+          showSimpleDialog(
+            message: currState.exception.toString(),
+            onConfirmButtonPressed: context.pop,
           );
       }
     });
